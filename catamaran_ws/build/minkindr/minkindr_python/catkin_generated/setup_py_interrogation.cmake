@@ -1,0 +1,7 @@
+set(minkindr_python_SETUP_PY_SETUP_MODULE "distutils.core")
+set(minkindr_python_SETUP_PY_VERSION "1.0.0")
+set(minkindr_python_SETUP_PY_SCRIPTS "")
+set(minkindr_python_SETUP_PY_PACKAGES "minkindr")
+set(minkindr_python_SETUP_PY_PACKAGE_DIRS "python/minkindr")
+set(minkindr_python_SETUP_PY_MODULES "")
+set(minkindr_python_SETUP_PY_MODULE_DIRS "")

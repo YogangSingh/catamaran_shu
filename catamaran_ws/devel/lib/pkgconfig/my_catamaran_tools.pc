@@ -1,0 +1,8 @@
+prefix=/home/kiitan/catamaran_ws/devel
+
+Name: my_catamaran_tools
+Description: Description of my_catamaran_tools
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

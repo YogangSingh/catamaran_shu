@@ -1,0 +1,7 @@
+set(catkin_boost_python_buildtool_test_SETUP_PY_SETUP_MODULE "distutils.core")
+set(catkin_boost_python_buildtool_test_SETUP_PY_VERSION "0.0.1")
+set(catkin_boost_python_buildtool_test_SETUP_PY_SCRIPTS "")
+set(catkin_boost_python_buildtool_test_SETUP_PY_PACKAGES "catkin_boost_python_test")
+set(catkin_boost_python_buildtool_test_SETUP_PY_PACKAGE_DIRS "python/catkin_boost_python_test")
+set(catkin_boost_python_buildtool_test_SETUP_PY_MODULES "")
+set(catkin_boost_python_buildtool_test_SETUP_PY_MODULE_DIRS "")

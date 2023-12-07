@@ -1,0 +1,3 @@
+<launch>
+    <node name ="map_sever" pkg="map_server" type="map_server" args="$(find my_catamaran_tools)/maps/mymap_empty.yaml"/>
+</launch>

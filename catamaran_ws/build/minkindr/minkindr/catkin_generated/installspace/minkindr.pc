@@ -1,0 +1,8 @@
+prefix=/home/kiitan/catamaran_ws/install
+
+Name: minkindr
+Description: Description of minkindr
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

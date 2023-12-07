@@ -1,0 +1,19 @@
+<launch>
+
+    <!-- Run the ROSSERIAL node -->
+    <include file="$(find gps_navigation)/launch/ros_arduino.launch" />
+
+    <!-- Run the nmea node -->
+    <include file="$(find gps_navigation)/launch/nmea_serial_driver.launch" />
+
+    <!-- Run the navsat_transform node -->
+    <include file="$(find gps_navigation)/launch/start_navsat.launch" />
+
+    <!-- Run the robot_localization file -->
+    <include file="$(find gps_navigation)/launch/ekf_localization.launch" />
+
+    <!-- Run the vel_con and the gpsimu2odom nodes-->
+    <include file="$(find gps_navigation)/launch/extras.launch" />
+
+    
+</launch>

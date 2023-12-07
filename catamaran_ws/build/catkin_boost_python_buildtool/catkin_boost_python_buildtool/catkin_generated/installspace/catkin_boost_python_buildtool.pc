@@ -1,0 +1,8 @@
+prefix=/home/kiitan/catamaran_ws/install
+
+Name: catkin_boost_python_buildtool
+Description: Description of catkin_boost_python_buildtool
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

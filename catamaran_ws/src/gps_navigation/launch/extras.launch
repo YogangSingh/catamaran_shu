@@ -1,0 +1,11 @@
+<launch>
+  <!-- Launching vel_con.py -->
+  <node pkg="gps_navigation" type="vel_con.py" name="vel_con_node" output="screen">
+    <!-- Add any additional parameters or remappings if needed -->
+  </node>
+
+  <!-- Launching gpsimu2odom.py -->
+  <node pkg="gps_navigation" type="gpsimu2odom.py" name="gpsimu2odom_node" output="screen">
+    <!-- Add any additional parameters or remappings if needed -->
+  </node>
+</launch>

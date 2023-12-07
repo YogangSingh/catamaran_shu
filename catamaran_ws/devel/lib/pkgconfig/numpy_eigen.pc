@@ -1,0 +1,8 @@
+prefix=/home/kiitan/catamaran_ws/devel
+
+Name: numpy_eigen
+Description: Description of numpy_eigen
+Version: 0.0.1
+Cflags: -I/home/kiitan/catamaran_ws/src/numpy_eigen/include
+Libs: -L${prefix}/lib 
+Requires: catkin_boost_python_buildtool eigen_catkin

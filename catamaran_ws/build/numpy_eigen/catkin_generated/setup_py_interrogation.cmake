@@ -1,0 +1,7 @@
+set(numpy_eigen_SETUP_PY_SETUP_MODULE "distutils.core")
+set(numpy_eigen_SETUP_PY_VERSION "0.0.1")
+set(numpy_eigen_SETUP_PY_SCRIPTS "")
+set(numpy_eigen_SETUP_PY_PACKAGES "numpy_eigen")
+set(numpy_eigen_SETUP_PY_PACKAGE_DIRS "src/numpy_eigen")
+set(numpy_eigen_SETUP_PY_MODULES "")
+set(numpy_eigen_SETUP_PY_MODULE_DIRS "")
