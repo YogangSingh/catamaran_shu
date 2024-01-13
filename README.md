@@ -64,7 +64,7 @@ roslaunch gps_navigation circular_behaviour.launch
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
-- The team at Neron USV https://github.com/heron
+- The ClearPath Robotics team for their work on the Heron USV and Kingfisher USV https://github.com/heron
 - https://github.com/bsb808
 - The team at TheConstruct. https://www.theconstructsim.com/
 
