@@ -1,6 +1,6 @@
 
 
-# Catamaran Shu
+# Catamaran SHU
 
 ## Introduction
 Catamaran Shu is an autonomous surface vehicle built and designed by me for my masters thesis. This project aims to build an autonomous ASV and perform some path-following experiments with it.
