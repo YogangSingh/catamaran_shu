@@ -1,2 +1,2 @@
-behaviour_control:catkin_boost_python_buildtool/catkin_boost_python_buildtool:catkin_boost_python_buildtool/catkin_boost_python_buildtool_test:catkin_simple:eigen_catkin:eigen_checks:gflags_catkin:glog_catkin:gps_navigation:minkindr/minkindr:minkindr/minkindr_python:minkindr_ros/minkindr_conversions:my_catamaran_tools:nmea_navsat_driver:numpy_eigen:odom_predictor
--DCATKIN_DEVEL_PREFIX=/home/kiitan/catamaran_ws/devel -DCMAKE_INSTALL_PREFIX=/home/kiitan/catamaran_ws/install -G Unix Makefiles
+behaviour_control:gps_navigation
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/catamaran_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/catamaran_ws/install -G Unix Makefiles

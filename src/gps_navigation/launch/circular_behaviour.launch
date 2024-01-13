@@ -1,0 +1,14 @@
+<launch>
+
+  <!-- A simple launch file for the circular behaviour node. -->
+
+  <!-- Run the usv_control node -->
+  <include file="$(find gps_navigation)/launch/usv_control.launch" />
+ 
+ 
+  <!-- Launching _straightLine.py -->
+  <node pkg="behaviour_control" type="_circular_new.py" name="circular_new" output="screen">
+    <!-- Add any additional parameters or remappings if needed -->
+  </node>
+
+</launch>

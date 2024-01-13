@@ -1,4 +1,4 @@
-prefix=/home/kiitan/catamaran_ws/install
+prefix=/home/ubuntu/catamaran_ws/install
 
 Name: behaviour_control
 Description: Description of behaviour_control

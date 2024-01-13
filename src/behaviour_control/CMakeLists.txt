@@ -8,6 +8,7 @@ project(behaviour_control)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+  roscpp
   rospy
 )
 
@@ -103,7 +104,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES behaviour_control
-#  CATKIN_DEPENDS rospy
+#  CATKIN_DEPENDS roscpp rospy
 #  DEPENDS system_lib
 )
 

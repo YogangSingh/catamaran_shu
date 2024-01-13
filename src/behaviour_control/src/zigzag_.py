@@ -20,7 +20,7 @@ class ZigzagBehaviorController:
         self.cmd_vel_pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
         self.generated_path_pub = rospy.Publisher('/zigzag_behavior_generated_path', Path, queue_size=10)
         self.followed_path_pub = rospy.Publisher('/zigzag_behavior_followed_path', Path, queue_size=10)
-        rospy.Subscriber('/odom', Odometry, self.odom_callback)
+        rospy.Subscriber('/odometry/filtered', Odometry, self.odom_callback)
 
         self.current_path = None
         self.path_index = 0

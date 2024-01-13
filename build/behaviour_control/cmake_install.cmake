@@ -1,8 +1,8 @@
-# Install script for directory: /home/kiitan/catamaran_ws/src/behaviour_control
+# Install script for directory: /home/ubuntu/catamaran_ws/src/behaviour_control
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/kiitan/catamaran_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/catamaran_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/kiitan/catamaran_ws/build/behaviour_control/catkin_generated/installspace/behaviour_control.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/catamaran_ws/build/behaviour_control/catkin_generated/installspace/behaviour_control.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/behaviour_control/cmake" TYPE FILE FILES
-    "/home/kiitan/catamaran_ws/build/behaviour_control/catkin_generated/installspace/behaviour_controlConfig.cmake"
-    "/home/kiitan/catamaran_ws/build/behaviour_control/catkin_generated/installspace/behaviour_controlConfig-version.cmake"
+    "/home/ubuntu/catamaran_ws/build/behaviour_control/catkin_generated/installspace/behaviour_controlConfig.cmake"
+    "/home/ubuntu/catamaran_ws/build/behaviour_control/catkin_generated/installspace/behaviour_controlConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/behaviour_control" TYPE FILE FILES "/home/kiitan/catamaran_ws/src/behaviour_control/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/behaviour_control" TYPE FILE FILES "/home/ubuntu/catamaran_ws/src/behaviour_control/package.xml")
 endif()
 

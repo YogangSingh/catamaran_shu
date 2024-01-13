@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 '''
-Defines a circular controller controller
+Defines a circular controller controller to follow a path
+with radius of 5.
 
 '''
 
@@ -25,13 +26,13 @@ class CircularBehaviorController:
         self.followed_path_pub = rospy.Publisher('/circular_behavior_followed_path', Path, queue_size=10)
 
         # Subscribe to odometry topic (assuming '/odom' here, adjust based on your system)
-        rospy.Subscriber('/odom', Odometry, self.odom_callback)
+        rospy.Subscriber('/odometry/filtered', Odometry, self.odom_callback)
 
         # Initialize other variables and parameters
         self.current_path = None
         self.path_index = 0
         self.Kp = 1.0  # Proportional gain for steering control
-        self.L = 1.0  # Wheelbase of the vehicle (distance between front and rear axles)
+        self.L = 0.31  # Wheelbase of the vehicle (distance between front and rear axles)
         self.trajectory = []  # List to store the followed trajectory
 
     def odom_callback(self, odom_msg):

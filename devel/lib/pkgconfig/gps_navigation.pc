@@ -1,4 +1,4 @@
-prefix=/home/kiitan/catamaran_ws/devel
+prefix=/home/ubuntu/catamaran_ws/devel
 
 Name: gps_navigation
 Description: Description of gps_navigation

@@ -20,19 +20,24 @@ class StraightLineBehaviorController:
         self.cmd_vel_pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
         self.generated_path_pub = rospy.Publisher('/straight_line_behavior_generated_path', Path, queue_size=10)
         self.followed_path_pub = rospy.Publisher('/straight_line_behavior_followed_path', Path, queue_size=10)
-        rospy.Subscriber('/odom', Odometry, self.odom_callback)
+        rospy.Subscriber('/odometry/filtered', Odometry, self.odom_callback)
 
         self.current_path = None
         self.path_index = 0
         self.Kp = 1.0
-        self.L = 1.0
+        self.L = 0.31 # Wheelbase of the vehicle (distance between front and rear axles)
         self.trajectory = []
 
     def odom_callback(self, odom_msg):
         current_pose = odom_msg.pose.pose
 
         if self.current_path is None:
-            target_position = (10.0, 5.0)
+
+            new_x, new_y = 2.0, 5.0 # x and y positions
+
+            target_position = (current_pose.position.x + new_x, current_pose.position.y + new_y)
+            
+
             self.current_path = self.generate_straight_line_path((current_pose.position.x, current_pose.position.y), target_position, num_points=100)
             self.publish_generated_path()
 
@@ -83,10 +88,12 @@ class StraightLineBehaviorController:
             x = start[0] + alpha * (end[0] - start[0])
             y = start[1] + alpha * (end[1] - start[1])
 
+            # Create a PoseStamped for each point with orientation information
             pose_stamped = PoseStamped()
             pose_stamped.pose.position.x = x
             pose_stamped.pose.position.y = y
 
+            # Calculate quaternion for the orientation (e.g., facing forward)
             quaternion = tf.transformations.quaternion_from_euler(0, 0, 0)
             pose_stamped.pose.orientation.x = quaternion[0]
             pose_stamped.pose.orientation.y = quaternion[1]

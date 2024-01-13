@@ -1,8 +1,8 @@
-# Install script for directory: /home/kiitan/catamaran_ws/src/gps_navigation
+# Install script for directory: /home/ubuntu/catamaran_ws/src/gps_navigation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/kiitan/catamaran_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/catamaran_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/kiitan/catamaran_ws/build/gps_navigation/catkin_generated/installspace/gps_navigation.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/catamaran_ws/build/gps_navigation/catkin_generated/installspace/gps_navigation.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gps_navigation/cmake" TYPE FILE FILES
-    "/home/kiitan/catamaran_ws/build/gps_navigation/catkin_generated/installspace/gps_navigationConfig.cmake"
-    "/home/kiitan/catamaran_ws/build/gps_navigation/catkin_generated/installspace/gps_navigationConfig-version.cmake"
+    "/home/ubuntu/catamaran_ws/build/gps_navigation/catkin_generated/installspace/gps_navigationConfig.cmake"
+    "/home/ubuntu/catamaran_ws/build/gps_navigation/catkin_generated/installspace/gps_navigationConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gps_navigation" TYPE FILE FILES "/home/kiitan/catamaran_ws/src/gps_navigation/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gps_navigation" TYPE FILE FILES "/home/ubuntu/catamaran_ws/src/gps_navigation/package.xml")
 endif()
 
